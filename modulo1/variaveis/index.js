@@ -19,21 +19,32 @@ console.log(10, 10, 10)
 let p = prompt("8")
 let t = prompt("70")
 alert(`Voce recebe ${t/p} por hora`)*/
-const nome = 'Pablo Henrique'
-let idade = 18
-typeof nome
-typeof idade
-//ele imprimiu as variaveis q eu coloquei
-console.log(prompt('qual o seu nome e sua idade?'))
-//console.log('ola', nome, 'vc tem', idade, 'anos')
+const nome = prompt('qual seu nome')
+const idade = prompt('qual sua idade')
 
-const estudante = true
+console.log('ola', nome, 'vc tem', idade)
+
+const jogaNoPc = prompt('vc joga no pc?SIM ou NAO')
+
+const gostaDeAnime = prompt('vc gosta de animes? SIM ou NAO')
+
+const fazEsportes = prompt('vc faz esportes? SIM ou NAO')
 
 console.log(
-  'meu nome eh',
-  nome,
-  'e tenho',
-  idade,
-  'anos e no momento estou estudando?',
-  estudante
+  'vc joga?',
+  jogaNoPc,
+  'gosta de animes?',
+  gostaDeAnime,
+  'pratica esportes?',
+  fazEsportes
 )
+
+let a = 10
+let b = 25
+
+c = a
+a = b
+b = c
+console.log('o novo valor de A eh', a)
+console.log('o novo valor de B eh', b)
+console.log('e o valor de C eh', c)
