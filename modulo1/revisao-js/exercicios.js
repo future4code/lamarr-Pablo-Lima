@@ -24,17 +24,39 @@ function retornaArrayOrdenado(array) {
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
-  return array % 2 === 0
+  function pares(array) {
+    return array % 2 === 0
+  }
+  let numerosPares = array.filter(pares)
+  return numerosPares
 }
 
 // EXERCÍCIO 05
-function retornaNumerosParesElevadosADois(array) {}
+function retornaNumerosParesElevadosADois(array) {
+  for (let numero of array) {
+    if (numero % 2 === 0) {
+      let novoarray = []
+      novoarray.push(numero ^ 2)
+    }
+    return novoarray
+  }
+}
 
 // EXERCÍCIO 06
-function retornaMaiorNumero(array) {}
+function retornaMaiorNumero(array) {
+  let maior = -Infinity
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] > maior) {
+      maior = array[i]
+    }
+  }
+  return maior
+}
 
 // EXERCÍCIO 07
-function retornaObjetoEntreDoisNumeros(num1, num2) {}
+function retornaObjetoEntreDoisNumeros(num1, num2) {
+
+}
 
 // EXERCÍCIO 08
 function retornaNPrimeirosPares(n) {}
